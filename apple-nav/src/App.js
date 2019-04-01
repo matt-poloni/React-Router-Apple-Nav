@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled, { createGlobalStyle } from 'styled-components';
+
+const GlobalStyles = createGlobalStyle`
+  html {
+    font-size: 62.5%;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  body { font-size: 1.4rem }
+`
+
+const WrapApp = styled.div`
+  width: 100vw;
+  background-color: #313131;
+  color: white;
+`
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <React.Fragment>
+        <GlobalStyles />
+        <WrapApp>
+          App
+        </WrapApp>
+      </React.Fragment>
     );
   }
 }
