@@ -7,7 +7,38 @@ const data = [
   {
     path: '/mac',
     display: 'Mac',
-    subNav: [],
+    subNav: [
+      {
+        text: 'MacBook'
+      },
+      {
+        text: 'MacBook Air'
+      },
+      {
+        text: 'MacBook Pro'
+      },
+      {
+        text: 'iMac'
+      },
+      {
+        text: 'iMac Pro'
+      },
+      {
+        text: 'Mac Pro'
+      },
+      {
+        text: 'Mac mini'
+      },
+      {
+        text: 'Accessories'
+      },
+      {
+        text: 'Mojave'
+      },
+      {
+        text: 'Compare'
+      },
+    ],
   },
   {
     path: '/ipad',

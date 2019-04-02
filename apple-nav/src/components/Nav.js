@@ -5,16 +5,21 @@ import styled from 'styled-components';
 const WrapNav = styled(NavLink)`
   color: white;
   text-decoration: none;
-  padding: 0 1rem;
+  margin: 0 1rem;
 
-  &.active {
-    color: A8A8A8;
+  &:hover, &.active {
+    color: #A7A7A7;
   }
 `
 
 const Nav = props => {
   return (
-    <WrapNav to={`${props.path}`}>{props.display}</WrapNav>
+    <WrapNav
+      to={`${props.path}`}
+      activeClassName="active"
+    >
+      {props.display}
+    </WrapNav>
   )
 }
 

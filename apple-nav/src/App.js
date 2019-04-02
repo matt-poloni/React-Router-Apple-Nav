@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import GlobalStyles from './GlobalStyles';
 import NavWrapper from './components/NavWrapper';
 import siteMap from './data';
@@ -8,7 +9,10 @@ class App extends Component {
     return (
       <React.Fragment>
         <GlobalStyles />
-        <NavWrapper siteMap={siteMap} />
+        <Route
+          path="/"
+          render={props => <NavWrapper {...props} siteMap={siteMap} />}
+        />
       </React.Fragment>
     );
   }
