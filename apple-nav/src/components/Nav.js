@@ -17,6 +17,7 @@ const Nav = props => {
     <WrapNav
       to={`${props.path}`}
       activeClassName="active"
+      id={props.path === '/' ? 'home' : ''}
     >
       {props.display}
     </WrapNav>
