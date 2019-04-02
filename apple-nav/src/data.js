@@ -1,7 +1,7 @@
 const data = [
   {
     path: '/',
-    display: 'Home',
+    display: ['fab', 'apple'],
     subNav: [],
   },
   {
@@ -191,12 +191,12 @@ const data = [
   },
   {
     path: '/search',
-    display: 'Search',
+    display: ['fas','fa-search'],
     subNav: [],
   },
   {
     path: '/shop',
-    display: 'Shop',
+    display: ['fas','fa-shopping-bag'],
     subNav: [],
   },
 ]

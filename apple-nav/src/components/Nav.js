@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const WrapNav = styled(NavLink)`
   color: white;
@@ -20,7 +21,14 @@ const Nav = props => {
       activeClassName="active"
       id={props.path === '/' ? 'home' : ''}
     >
-      {props.display}
+      {typeof props.display === 'string'
+        ? props.display
+        : <FontAwesomeIcon
+            className=""
+            icon={props.display}
+            size='lg'
+          />
+      }
     </WrapNav>
   )
 }
