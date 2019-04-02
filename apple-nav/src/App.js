@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-
-const GlobalStyles = createGlobalStyle`
-  html {
-    font-size: 62.5%;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-
-  body { font-size: 1.4rem }
-`
+import styled from 'styled-components';
+import GlobalStyles from './GlobalStyles';
 
 const WrapApp = styled.div`
   width: 100vw;
