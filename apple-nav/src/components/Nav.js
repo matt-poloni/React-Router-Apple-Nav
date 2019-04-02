@@ -15,6 +15,7 @@ const WrapNav = styled(NavLink)`
 const Nav = props => {
   return (
     <WrapNav
+      exact
       to={`${props.path}`}
       activeClassName="active"
       id={props.path === '/' ? 'home' : ''}
